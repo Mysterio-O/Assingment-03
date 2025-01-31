@@ -38,10 +38,60 @@
         .sora-regular {
             font-family: "Sora", serif;
         }
-
+        .orange {
+            color: #FFDC26;
+        }
+        .head-bg {
+            background-color: #FFF9F4;
+        }
        </style>
 </head>
-<body>
-    
+<body class="adlam-display-regular">
+    <!-- header starts here -->
+    <header>
+        <!-- navbar  -->
+         <section class="head-bg h-[100px] flex sm:justify-between">
+            <nav class="flex justify-between items-center lg:container lg:mx-auto w-full px-4 py-3">
+                <!-- nav logo + title -->
+                 <div class="flex items-center text-2xl gap-3">
+                    <!-- nav logo -->
+                     <div>
+                        <img class="lg:cursor-pointer" src="./c1-assets/logo-header.png" alt="">
+                     </div>
+                     <!-- nav title -->
+                      <div>
+                        <h1 class="sora-regular font-normal text-black hidden lg:block lg:cursor-pointer">Browse<span class="orange">4</span>Pets</h1>
+                      </div>
+                 </div>
+                 <!-- nav options -->
+                  <div class="hidden lg:flex gap-8">
+                    <p class="sora-regular text-xl text-black lg:cursor-pointer">Find a Pet</p>
+                    <p class="sora-regular text-xl text-black lg:cursor-pointer">Breed</p>
+                    <p class="sora-regular text-xl text-black lg:cursor-pointer">Contact Us</p>
+                  </div>
+
+                  <!-- navigation -->
+                   <div class="hidden lg:flex gap-3 items-center">
+                    <i class="fa-regular fa-bell lg:cursor-pointer"></i>
+                    <i class="fa-solid fa-magnifying-glass lg:cursor-pointer"></i>
+                    <button class="btn px-7 py-2 btn-outline border-yellow-400">Login</button>
+                    <button class="btn px-7 py-2 btn-warning opacity-70">Register</button>
+                   </div>
+
+                   <!-- menu bar -->
+                    <div class="md:hidden"><i class="fa-solid fa-bars"></i></div>
+            </nav>
+         </section>
+
+         <!-- hero section -->
+          <section class="mt-8 lg:mt-24  px-4 lg:container mx-auto lg:h-[749px]">
+            <div class="relative lg:max-w-[681px] z-30">
+                <h2 class="mb-3 text-3xl lg:text-6xl">Pamper Your Pet,<br> Because They Deserve<br> the Bes</h2>
+                <p class="mb-3 text-gray-500 relative z-10">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="btn btn-warning opacity-70 px-7 py-2 relative z-10">Find a Pet</button>
+            </div>
+            <img class="transform -translate-y-24 z-0 lg:-translate-y-80" src="./c1-assets/cat-big.png" alt="">
+          </section>
+    </header>
 </body>
 </html>
