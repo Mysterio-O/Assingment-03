@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pet Here</title>
     <!-- tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -91,6 +91,7 @@
                     <div class="md:hidden"><i class="fa-solid fa-bars"></i></div>
             </nav>
          </section>
+         
 
          <!-- hero section -->
           <section class="mt-8 lg:mt-24  px-4 lg:container mx-auto lg:h-[749px]">
@@ -98,6 +99,11 @@
                 <h2 class="mb-3 text-3xl lg:text-6xl">Pamper Your Pet,<br> Because They Deserve<br> the Bes</h2>
                 <p class="mb-3 text-gray-500 relative z-10">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
                 <button class="btn btn-warning opacity-70 px-7 py-2 relative z-10">Find a Pet</button>
+                <!-- animation added -->
+                <span class="relative left-12 bottom-7 flex h-5 w-8">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                  </span>
             </div>
             <img class="transform -translate-y-24 z-0 lg:-translate-y-80" src="./c1-assets/cat-big.png" alt="">
           </section>
@@ -372,6 +378,32 @@
                      <!-- image -->
                       <img class="transform -translate-y-8" src="./c1-assets/cute-pet-mid.png" alt="">
                   </div>
+             </div>
+         </section>
+
+
+         <!-- rating section -->
+
+         <section class="mt-10 lg:mt-20">
+            <!-- container -->
+             <div class="flex flex-col items-center gap-4 lg:gap-8">
+                <div class="flex items-center gap-3 text-4xl justify-center lg:text-6xl">
+                    <h1 class="text-center text-2xl lg:text-7xl">Please <span class="orange">Rate</span> Us</h1>
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked="checked" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                  <input type="text" placeholder="Share Your Feedback" class="input input-bordered w-full max-w-xs lg:max-w-lg" />
+                  <button class="btn btn-wide opacity-50">Send</button>
              </div>
          </section>
 
