@@ -53,6 +53,14 @@
         .secondary {
             background-color: #FFF9F4;
         }
+
+        /** forcing browser to remove all kind of dark mode **/
+
+        @media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: light;
+    }
+}
        </style>
 </head>
 <body class="adlam-display-regular">
